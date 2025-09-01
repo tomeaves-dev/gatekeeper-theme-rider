@@ -8,23 +8,36 @@
     <property name="originalScheme">Darcula</property>
   </metaInfo>
   
-  <!-- General Colors -->
+  <!-- General Colors - All backgrounds set to #101010 -->
   <colors>
     <option name="CARET_COLOR" value="29adff" />
     <option name="CARET_ROW_COLOR" value="1e1e1e" />
     <option name="CONSOLE_BACKGROUND_KEY" value="101010" />
-    <option name="GUTTER_BACKGROUND" value="171717" />
+    <option name="EDITOR_BACKGROUND_COLOR" value="101010" />
+    <option name="GUTTER_BACKGROUND" value="101010" />
     <option name="INDENT_GUIDE" value="252525" />
     <option name="LINE_NUMBERS_COLOR" value="454545" />
     <option name="METHOD_SEPARATORS_COLOR" value="2c2c2c" />
-    <option name="NOTIFICATION_BACKGROUND" value="171717" />
+    <option name="NOTIFICATION_BACKGROUND" value="101010" />
     <option name="RIGHT_MARGIN_COLOR" value="2c2c2c" />
-    <option name="SELECTED_INDENT_GUIDE" value="2c2c2c" />
+    <option name="SELECTED_INDENT_GUIDE" value="29adff" />
     <option name="SELECTION_BACKGROUND" value="2c2c2c" />
     <option name="SELECTION_FOREGROUND" value="cccdd1" />
     <option name="SEPARATOR_BELOW_COLOR" value="1e1e1e" />
     <option name="TEARLINE_COLOR" value="2c2c2c" />
     <option name="WHITESPACES" value="252525" />
+    <option name="FOLDED_TEXT_BORDER_COLOR" value="29adff" />
+    <option name="ADDED_LINES_COLOR" value="00e756" />
+    <option name="DELETED_LINES_COLOR" value="ff1a67" />
+    <option name="MODIFIED_LINES_COLOR" value="fff024" />
+    
+    <!-- Make ALL backgrounds consistent -->
+    <option name="BACKGROUND" value="101010" />
+    <option name="FOREGROUND" value="cccdd1" />
+    <option name="TEXT" value="cccdd1" />
+    <option name="TEXT_BACKGROUND" value="101010" />
+    <option name="EDITOR_BACKGROUND" value="101010" />
+    <option name="EDITOR_FOREGROUND" value="cccdd1" />
   </colors>
   
   <!-- Attributes for syntax highlighting -->
@@ -84,7 +97,53 @@
       </value>
     </option>
     
-    <!-- Variables -->
+    <!-- Keywords - Vibrant Red/Pink -->
+    <option name="KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="ff1a67" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    
+    <!-- Strings - Bright Green -->
+    <option name="STRING">
+      <value>
+        <option name="FOREGROUND" value="00e756" />
+      </value>
+    </option>
+    
+    <!-- Numbers - Bright Orange/Yellow -->
+    <option name="NUMBER">
+      <value>
+        <option name="FOREGROUND" value="ffb20f" />
+      </value>
+    </option>
+    
+    <!-- Functions/Methods - Bright Blue -->
+    <option name="METHOD_CALL">
+      <value>
+        <option name="FOREGROUND" value="29adff" />
+      </value>
+    </option>
+    <option name="METHOD_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="29adff" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="29adff" />
+      </value>
+    </option>
+    <option name="FUNCTION_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="29adff" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    
+    <!-- Variables - Orange -->
     <option name="LOCAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="ffa300" />
@@ -100,55 +159,94 @@
         <option name="FOREGROUND" value="ffa300" />
       </value>
     </option>
-    
-    <!-- Types/Classes -->
-    <option name="CLASS_NAME">
+    <option name="GLOBAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="a79ac0" />
+        <option name="FOREGROUND" value="ff4394" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="INTERFACE_NAME">
+    
+    <!-- Types/Classes - Purple tones -->
+    <option name="CLASS_NAME">
       <value>
         <option name="FOREGROUND" value="c54bcf" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="TYPE_PARAMETER_NAME">
+    <option name="INTERFACE_NAME">
       <value>
         <option name="FOREGROUND" value="a79ac0" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="TYPE_PARAMETER_NAME">
+      <value>
+        <option name="FOREGROUND" value="c54bcf" />
+      </value>
+    </option>
+    <option name="ENUM_NAME">
+      <value>
+        <option name="FOREGROUND" value="a79ac0" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     
-    <!-- Constants -->
+    <!-- Constants - Bright Yellow -->
     <option name="STATIC_FIELD">
       <value>
         <option name="FOREGROUND" value="fff024" />
-        <option name="FONT_TYPE" value="2" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="CONSTANT">
+      <value>
+        <option name="FOREGROUND" value="fff024" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     
-    <!-- Operators -->
+    <!-- Operators - Cyan -->
     <option name="OPERATION_SIGN">
       <value>
         <option name="FOREGROUND" value="29adff" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     
-    <!-- Braces and Brackets -->
+    <!-- Braces and Brackets - Make them stand out -->
     <option name="BRACES">
       <value>
-        <option name="FOREGROUND" value="cccdd1" />
+        <option name="FOREGROUND" value="ff4394" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="BRACKETS">
       <value>
-        <option name="FOREGROUND" value="cccdd1" />
+        <option name="FOREGROUND" value="ff4394" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="PARENTHESES">
       <value>
-        <option name="FOREGROUND" value="cccdd1" />
+        <option name="FOREGROUND" value="ff4394" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    
+    <!-- Semicolons and other punctuation -->
+    <option name="SEMICOLON">
+      <value>
+        <option name="FOREGROUND" value="29adff" />
+      </value>
+    </option>
+    <option name="DOT">
+      <value>
+        <option name="FOREGROUND" value="29adff" />
+      </value>
+    </option>
+    <option name="COMMA">
+      <value>
+        <option name="FOREGROUND" value="29adff" />
       </value>
     </option>
     
